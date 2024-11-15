@@ -1,0 +1,4581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1260</width>
+    <height>809</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferDefault</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>1238</width>
+        <height>787</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1238</width>
+        <height>787</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Tahoma</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QStackedWidget &gt; QWidget {
+    border: 1px solid #ccc; /* Viền nhẹ */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_trangchu">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetFixedSize</enum>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetFixedSize</enum>
+            </property>
+            <item>
+             <widget class="QToolButton" name="bt_admin">
+              <property name="maximumSize">
+               <size>
+                <width>89</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Tahoma</family>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+background-color: rgb(255, 255, 255);
+border: 2px solid black;
+border-radius: 15px; 
+</string>
+              </property>
+              <property name="text">
+               <string>ADMIN</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="maximumSize">
+               <size>
+                <width>863</width>
+                <height>89</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Tahoma</family>
+                <pointsize>26</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+color: rgb(0, 0, 34);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="text">
+               <string>MÁY CHẤM CÔNG</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QFrame" name="frame">
+              <property name="minimumSize">
+               <size>
+                <width>358</width>
+                <height>509</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>358</width>
+                <height>509</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::WinPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <widget class="QLabel" name="label_2">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>30</y>
+                 <width>179</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>13</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(170, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Thông tin chung</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_com">
+               <property name="geometry">
+                <rect>
+                 <x>12</x>
+                 <y>78</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Cổng kết nối thẻ ID:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_gio_vao_lam">
+               <property name="geometry">
+                <rect>
+                 <x>12</x>
+                 <y>210</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Giờ vào làm:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_tong_nv">
+               <property name="geometry">
+                <rect>
+                 <x>12</x>
+                 <y>144</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Tổng số lượng nhân viên:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_ngay_hom_nay">
+               <property name="geometry">
+                <rect>
+                 <x>12</x>
+                 <y>410</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Ngày:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_gio_tan_lam">
+               <property name="geometry">
+                <rect>
+                 <x>12</x>
+                 <y>276</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Giờ tan làm:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_so_ngay_nghi_max">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>340</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Số ngày nghỉ tối đa/tháng:</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_2">
+              <property name="minimumSize">
+               <size>
+                <width>359</width>
+                <height>509</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>359</width>
+                <height>509</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::WinPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <widget class="QLabel" name="lb_ho_ten_nv">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>76</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Họ và tên:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_nv_gio_quet">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>144</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Giờ quẹt:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_3">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>30</y>
+                 <width>219</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>13</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(170, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Thông tin nhân viên</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_tt_nv">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>210</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Trạng thái:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_sl_vi_pham">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>276</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Số lần vi phạm trong tháng:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lb_so_ngay_nghi">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>340</y>
+                 <width>320</width>
+                 <height>55</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="text">
+                <string>Số ngày nghỉ trong tháng:</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>358</width>
+                <height>509</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>358</width>
+                <height>509</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::WinPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <widget class="QLabel" name="lb_id">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>76</y>
+                 <width>240</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial,sans-serif</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: #f0f0f0; /* Màu nền sáng */
+    border: 2px solid; /* Viền màu xanh dương */
+	border-color: rgb(0, 0, 0);
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách bên ngoài */
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::WinPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <property name="text">
+                <string>ID nhân viên</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_4">
+               <property name="geometry">
+                <rect>
+                 <x>110</x>
+                 <y>10</y>
+                 <width>121</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>13</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(170, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Quẹt thẻ</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>140</y>
+                 <width>261</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Nhập ID Nhân viên (NẾU CẦN)</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QPlainTextEdit" name="edt_id_nc">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>170</y>
+                 <width>240</width>
+                 <height>40</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPlainTextEdit{
+	
+	
+	border-color: rgb(43, 43, 43);
+
+}</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="btn_reset">
+               <property name="geometry">
+                <rect>
+                 <x>119</x>
+                 <y>288</y>
+                 <width>121</width>
+                 <height>40</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+background-color: rgb(255, 255, 255);
+border: 2px solid black;
+border-radius: 15px; 
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="btn_thong_tin">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>340</y>
+                 <width>121</width>
+                 <height>40</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+background-color: rgb(255, 255, 255);
+border: 2px solid black;
+border-radius: 15px; 
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="btn_xn">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>238</y>
+                 <width>121</width>
+                 <height>40</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+color: rgb(255, 255, 255);
+
+border-radius: 15px; 
+background-color: rgb(91, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Xác nhận</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_thong_tin">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Maximum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetMaximumSize</enum>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetMaximumSize</enum>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetMaximumSize</enum>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="bt_trang_chu_thong_tin">
+                  <property name="maximumSize">
+                   <size>
+                    <width>101</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border: 2px solid black;
+border-radius: 15px; 
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Trang chủ</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_loc_tt">
+                  <property name="maximumSize">
+                   <size>
+                    <width>101</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border-radius: 15px; 
+background-color: rgb(84, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>Lọc kết quả</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QComboBox" name="combo_ht">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Họ và tên</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="lb_ht_tk">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="combo_thang">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Tháng</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="lb_thang_tk">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="combo_nam">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Năm</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="lb_nam_tk">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="combo_tt">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Trạng thái</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="lb_tt_tk">
+                  <property name="minimumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>289</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetMaximumSize</enum>
+              </property>
+              <item>
+               <widget class="QPlainTextEdit" name="edt_tim_kiem_tt">
+                <property name="minimumSize">
+                 <size>
+                  <width>229</width>
+                  <height>31</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>289</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Tahoma</family>
+                 </font>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::WinPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetMaximumSize</enum>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="btn_xn_tk_tt">
+                  <property name="minimumSize">
+                   <size>
+                    <width>101</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>101</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border-radius: 15px; 
+background-color: rgb(84, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>Tìm kiếm</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_save_tk_tt">
+                  <property name="minimumSize">
+                   <size>
+                    <width>101</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>101</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border: 2px solid black;
+border-radius: 15px; 
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Maximum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>98</width>
+              <height>18</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_25">
+                <property name="maximumSize">
+                 <size>
+                  <width>759</width>
+                  <height>27</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Tahoma</family>
+                  <pointsize>13</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Thông tin chấm công</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tb_cc_tt">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>759</width>
+                  <height>285</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Tahoma</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTableWidget {
+                border: 1px solid gray;
+                border-radius: 5px;
+                gridline-color: gray;
+                background-color: white;
+            }
+            QTableWidget::item {
+                border-bottom: 1px solid gray;
+                padding: 5px;
+            }
+            QHeaderView::section {
+                background-color: lightgray;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+            QTableWidget QTableCornerButton::section {
+                background-color: lightgray;
+                border: 1px solid gray;
+            }
+            QTableWidget::item:selected {
+                background-color: blue;
+            }</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::WinPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_26">
+                <property name="maximumSize">
+                 <size>
+                  <width>759</width>
+                  <height>27</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Tahoma</family>
+                  <pointsize>13</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Kết quả tìm kiếm</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tb_kq_tk">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>759</width>
+                  <height>285</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Tahoma</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTableWidget {
+                border: 1px solid gray;
+                border-radius: 5px;
+                gridline-color: gray;
+                background-color: white;
+            }
+            QTableWidget::item {
+                border-bottom: 1px solid gray;
+                padding: 5px;
+            }
+            QHeaderView::section {
+                background-color: lightgray;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+            QTableWidget QTableCornerButton::section {
+                background-color: lightgray;
+                border: 1px solid gray;
+            }
+            QTableWidget::item:selected {
+                background-color: blue;
+            }</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::WinPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Maximum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>28</width>
+              <height>18</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_LOGIN">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_4">
+          <property name="maximumSize">
+           <size>
+            <width>461</width>
+            <height>541</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #f0f0f0;
+                border: 2px solid #8f8f91;
+                border-radius: 15px;
+                margin: 10px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>30</y>
+             <width>281</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>ĐĂNG NHẬP ADMIN</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>90</y>
+             <width>120</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>TÀI KHOẢN</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>180</y>
+             <width>120</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>MẬT KHẨU</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="cb_sp_dn">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>280</y>
+             <width>151</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Show password</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_dang_nhap">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>340</y>
+             <width>150</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+border-radius: 15px; 
+background-color: rgb(95, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>ĐĂNG NHẬP</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_trang_chu_admin">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>380</y>
+             <width>150</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+           </property>
+           <property name="text">
+            <string>TRANG CHỦ</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_doi_mk">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>420</y>
+             <width>151</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+           </property>
+           <property name="text">
+            <string>ĐỔI MẬT KHẨU</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_quen_mk">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>460</y>
+             <width>150</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+           </property>
+           <property name="text">
+            <string>QUÊN MẬT KHẨU</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="edt_tk">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>130</y>
+             <width>251</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>251</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border: 2px solid black;
+            }</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="edt_mk">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>220</y>
+             <width>251</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>251</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border: 2px solid black;
+            }</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_doi_mk">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_5">
+          <property name="minimumSize">
+           <size>
+            <width>441</width>
+            <height>681</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>441</width>
+            <height>681</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #f0f0f0;
+                border: 2px solid #8f8f91;
+                border-radius: 15px;
+                margin: 10px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <widget class="QLabel" name="label_23">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>30</y>
+             <width>311</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>ĐỔI MẬT KHẨU ADMIN</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>100</y>
+             <width>151</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>TÀI KHOẢN</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_31">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>200</y>
+             <width>141</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>MẬT KHẨU CŨ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_trangchu_doi_mk">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>540</y>
+             <width>121</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+           </property>
+           <property name="text">
+            <string>TRANG CHỦ</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_xac_nhan_doi_mk">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>460</y>
+             <width>191</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+border-radius: 15px; 
+background-color: rgb(95, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>XÁC NHẬN ĐỔI MẬT KHẨU</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_32">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>300</y>
+             <width>151</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>MẬT KHẨU MỚI</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_dangnhap_doimk">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>500</y>
+             <width>121</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+           </property>
+           <property name="text">
+            <string>ĐĂNG NHẬP</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="edt_mk_cu">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>240</y>
+             <width>251</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>251</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border: 2px solid black;
+            }</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="edt_mk_moi">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>340</y>
+             <width>251</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>251</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border: 2px solid black;
+            }</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="cb_show_pwd">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>400</y>
+             <width>151</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>Show password</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="edt_tk_doi_mk">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>140</y>
+             <width>251</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border: 2px solid black;
+            }</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_quen_mk">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_6">
+          <property name="maximumSize">
+           <size>
+            <width>450</width>
+            <height>660</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #f0f0f0;
+                border: 2px solid #8f8f91;
+                border-radius: 15px;
+                margin: 10px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <widget class="QPushButton" name="bt_trang_chu_quen">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>520</y>
+             <width>121</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+           </property>
+           <property name="text">
+            <string>TRANG CHỦ</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_38">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>340</y>
+             <width>130</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>MẬT KHẨU MỚI</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_dn_quen">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>480</y>
+             <width>121</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+           </property>
+           <property name="text">
+            <string>ĐĂNG NHẬP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_mk_moi_quen">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>380</y>
+             <width>260</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_xac_nhan_caplai">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>440</y>
+             <width>141</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+border-radius: 15px; 
+background-color: rgb(95, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>CẤP LẠI MẬT KHẨU</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_35">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>100</y>
+             <width>91</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>TÀI KHOẢN</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="edt_cccd">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>250</y>
+             <width>260</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>251</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border: 2px solid black;
+            }</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_33">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>30</y>
+             <width>241</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>QUÊN MẬT KHẨU</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_37">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>210</y>
+             <width>91</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>CCCD</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="edt_tk_quen_mk">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>140</y>
+             <width>260</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial,sans-serif</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border: 2px solid black;
+            }</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="cb_s_cccd">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>300</y>
+             <width>130</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>Show CCCD</string>
+           </property>
+           <property name="autoRepeatInterval">
+            <number>100</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_admin">
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>7</number>
+            </property>
+            <property name="sizeConstraint">
+             <enum>QLayout::SetNoConstraint</enum>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="maximumSize">
+               <size>
+                <width>291</width>
+                <height>51</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Tahoma</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Quản lý nhân viên</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_dang_xuat">
+              <property name="maximumSize">
+               <size>
+                <width>111</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Tahoma</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+              </property>
+              <property name="text">
+               <string>Đăng xuất</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_trang_chu">
+              <property name="maximumSize">
+               <size>
+                <width>111</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Tahoma</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+              </property>
+              <property name="text">
+               <string>Trang chủ</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_20">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>19</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QTabWidget" name="tab_quan_ly">
+                <property name="font">
+                 <font>
+                  <family>Tahoma</family>
+                 </font>
+                </property>
+                <property name="whatsThis">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTabWidget::pane {
+                border: 1px solid #8f8f91;
+                background: #f0f0f0;
+            }
+            QTabBar::tab {
+                background: #d0d0d0;
+                border: 1px solid #8f8f91;
+                padding: 10px;
+                margin: 2px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            QTabBar::tab:selected {
+                background: #ffffff;
+                border-bottom-color: #ffffff;
+            }
+            QTabBar::tab:hover {
+                background: #e0e0e0;
+            }</string>
+                </property>
+                <property name="currentIndex">
+                 <number>3</number>
+                </property>
+                <widget class="QWidget" name="tab_quan_ly_nhan_vien">
+                 <attribute name="title">
+                  <string>Tab 1</string>
+                 </attribute>
+                 <widget class="QWidget" name="layoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>11</x>
+                    <y>11</y>
+                    <width>513</width>
+                    <height>641</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_14">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                     <property name="sizeConstraint">
+                      <enum>QLayout::SetMaximumSize</enum>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_11">
+                       <property name="minimumSize">
+                        <size>
+                         <width>509</width>
+                         <height>27</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                         <pointsize>13</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Danh sách nhân viên</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tb_danh_sach_nhan_vien">
+                       <property name="minimumSize">
+                        <size>
+                         <width>509</width>
+                         <height>305</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>509</width>
+                         <height>305</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QTableWidget {
+                border: 1px solid gray;
+                border-radius: 5px;
+                gridline-color: gray;
+                background-color: white;
+            }
+            QTableWidget::item {
+                border-bottom: 1px solid gray;
+                padding: 5px;
+            }
+            QHeaderView::section {
+                background-color: lightgray;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+            QTableWidget QTableCornerButton::section {
+                background-color: lightgray;
+                border: 1px solid gray;
+            }
+            QTableWidget::item:selected {
+                background-color: blue;
+            }</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::WinPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Plain</enum>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>208</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="layoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>531</x>
+                    <y>11</y>
+                    <width>125</width>
+                    <height>641</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_16">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <property name="sizeConstraint">
+                      <enum>QLayout::SetMaximumSize</enum>
+                     </property>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <property name="sizeConstraint">
+                        <enum>QLayout::SetMaximumSize</enum>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_29">
+                         <property name="minimumSize">
+                          <size>
+                           <width>119</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Tahoma</family>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Thêm/Xóa nhân viên</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="combo_them_xoa">
+                         <property name="minimumSize">
+                          <size>
+                           <width>119</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Tahoma</family>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_che_do_them_xoa">
+                       <property name="minimumSize">
+                        <size>
+                         <width>110</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>110</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Chế độ:</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_4">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>488</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="layoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>903</x>
+                    <y>11</y>
+                    <width>233</width>
+                    <height>641</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_18">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_17">
+                     <item>
+                      <widget class="QLabel" name="label_34">
+                       <property name="minimumSize">
+                        <size>
+                         <width>156</width>
+                         <height>27</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>156</width>
+                         <height>27</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                         <pointsize>13</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Xóa nhân viên</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_uid_xoa">
+                       <property name="minimumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial,sans-serif</family>
+                         <pointsize>-1</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_36">
+                       <property name="minimumSize">
+                        <size>
+                         <width>105</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>105</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Nhập ID (Nếu cần)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="edt_uid_xoa">
+                       <property name="minimumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial,sans-serif</family>
+                         <pointsize>-1</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btn_xn_xoa">
+                       <property name="minimumSize">
+                        <size>
+                         <width>91</width>
+                         <height>31</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>91</width>
+                         <height>31</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(80, 0, 0);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                       </property>
+                       <property name="text">
+                        <string>Xác nhận xóa</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_ten_nhan_vien_xoa">
+                       <property name="maximumSize">
+                        <size>
+                         <width>211</width>
+                         <height>21</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                         <pointsize>10</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Tên nhân viên:</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_5">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>368</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="layoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>664</x>
+                    <y>12</y>
+                    <width>233</width>
+                    <height>641</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_19">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_13">
+                     <item>
+                      <widget class="QLabel" name="label_27">
+                       <property name="minimumSize">
+                        <size>
+                         <width>175</width>
+                         <height>27</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>175</width>
+                         <height>27</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                         <pointsize>13</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Thêm nhân viên</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_uid_them">
+                       <property name="minimumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial,sans-serif</family>
+                         <pointsize>-1</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_30">
+                       <property name="minimumSize">
+                        <size>
+                         <width>110</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>110</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Nhập tên nhân viên</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="edt_ten_nhan_vien_them">
+                       <property name="minimumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial,sans-serif</family>
+                         <pointsize>-1</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_8">
+                       <property name="sizeConstraint">
+                        <enum>QLayout::SetMaximumSize</enum>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_40">
+                         <property name="maximumSize">
+                          <size>
+                           <width>46</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Tahoma</family>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Chức vụ</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_5">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeType">
+                          <enum>QSizePolicy::Maximum</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>18</width>
+                           <height>17</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="combo_chuc_vu">
+                         <property name="minimumSize">
+                          <size>
+                           <width>129</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>129</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Tahoma</family>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_6">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeType">
+                          <enum>QSizePolicy::Maximum</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>18</width>
+                           <height>17</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_chuc_vu_them">
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Chức vụ</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_41">
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>SDT</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="edt_sdt_them">
+                       <property name="minimumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>229</width>
+                         <height>45</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial,sans-serif</family>
+                         <pointsize>-1</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="bt_xac_nhan_them">
+                       <property name="minimumSize">
+                        <size>
+                         <width>111</width>
+                         <height>31</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>111</width>
+                         <height>31</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Tahoma</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(80, 0, 0);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                       </property>
+                       <property name="text">
+                        <string>Xác nhận thêm</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>278</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_cai_dat">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                 <widget class="QWidget" name="layoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>570</x>
+                    <y>30</y>
+                    <width>351</width>
+                    <height>281</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_9">
+                   <item>
+                    <widget class="QLabel" name="label_17">
+                     <property name="font">
+                      <font>
+                       <family>Tahoma</family>
+                       <pointsize>15</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Thông tin cập nhật</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="lb_cn_gio_vao">
+                     <property name="minimumSize">
+                      <size>
+                       <width>291</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial,sans-serif</family>
+                       <pointsize>-1</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="lb_cn_gio_ra">
+                     <property name="minimumSize">
+                      <size>
+                       <width>271</width>
+                       <height>21</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial,sans-serif</family>
+                       <pointsize>-1</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="lb_cn_com">
+                     <property name="minimumSize">
+                      <size>
+                       <width>271</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial,sans-serif</family>
+                       <pointsize>-1</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="lb_xn_so_ngay_nghi">
+                     <property name="minimumSize">
+                      <size>
+                       <width>271</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial,sans-serif</family>
+                       <pointsize>-1</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QLabel" name="label_22">
+                  <property name="geometry">
+                   <rect>
+                    <x>630</x>
+                    <y>320</y>
+                    <width>231</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>15</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Lịch sử cập nhật</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QTableWidget" name="tb_lich_su_cn">
+                  <property name="geometry">
+                   <rect>
+                    <x>540</x>
+                    <y>359</y>
+                    <width>401</width>
+                    <height>201</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTableWidget {
+                border: 1px solid gray;
+                border-radius: 5px;
+                gridline-color: gray;
+                background-color: white;
+            }
+            QTableWidget::item {
+                border-bottom: 1px solid gray;
+                padding: 5px;
+            }
+            QHeaderView::section {
+                background-color: lightgray;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+            QTableWidget QTableCornerButton::section {
+                background-color: lightgray;
+                border: 1px solid gray;
+            }
+            QTableWidget::item:selected {
+                background-color: blue;
+            }</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::WinPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Plain</enum>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xoa_dong_cd">
+                  <property name="geometry">
+                   <rect>
+                    <x>700</x>
+                    <y>570</y>
+                    <width>101</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Xóa</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_14">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>90</y>
+                    <width>87</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Giờ vào làm</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QTimeEdit" name="timeEdit_gio_vao">
+                  <property name="geometry">
+                   <rect>
+                    <x>101</x>
+                    <y>119</y>
+                    <width>141</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xn_gio_vao_lam">
+                  <property name="geometry">
+                   <rect>
+                    <x>101</x>
+                    <y>190</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Xác nhận giờ vào làm</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_15">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>346</y>
+                    <width>85</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Giờ tan làm</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QTimeEdit" name="timeEdit_gio_ra">
+                  <property name="geometry">
+                   <rect>
+                    <x>101</x>
+                    <y>373</y>
+                    <width>141</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="maximumTime">
+                   <time>
+                    <hour>23</hour>
+                    <minute>59</minute>
+                    <second>59</second>
+                   </time>
+                  </property>
+                  <property name="minimumTime">
+                   <time>
+                    <hour>0</hour>
+                    <minute>0</minute>
+                    <second>0</second>
+                   </time>
+                  </property>
+                  <property name="displayFormat">
+                   <string>h:mm AP</string>
+                  </property>
+                  <property name="timeSpec">
+                   <enum>Qt::LocalTime</enum>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xn_gio_tan_lam">
+                  <property name="geometry">
+                   <rect>
+                    <x>101</x>
+                    <y>450</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Xác nhận giờ tan làm</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_16">
+                  <property name="geometry">
+                   <rect>
+                    <x>329</x>
+                    <y>90</y>
+                    <width>92</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Cổng kết nối</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="combobox_cong_stm">
+                  <property name="geometry">
+                   <rect>
+                    <x>330</x>
+                    <y>120</y>
+                    <width>141</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xn_cong_com">
+                  <property name="geometry">
+                   <rect>
+                    <x>330</x>
+                    <y>190</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Xác nhận cổng kết nối</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_19">
+                  <property name="geometry">
+                   <rect>
+                    <x>329</x>
+                    <y>346</y>
+                    <width>131</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Số ngày nghỉ/tháng</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xn_so_ngay_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>330</x>
+                    <y>450</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Xác nhận số ngày nghỉ</string>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="combo_so_ngay_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>330</x>
+                    <y>376</y>
+                    <width>141</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                   </font>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_nghi">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                 <widget class="QCalendarWidget" name="calendarWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>40</x>
+                    <y>40</y>
+                    <width>401</width>
+                    <height>231</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="locale">
+                   <locale language="Vietnamese" country="Vietnam"/>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="lb_uid_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>580</x>
+                    <y>30</y>
+                    <width>250</width>
+                    <height>45</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="edt_uid_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>580</x>
+                    <y>130</y>
+                    <width>250</width>
+                    <height>45</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                  </property>
+                 </widget>
+                 <widget class="QPlainTextEdit" name="edt_ghi_chu_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>880</x>
+                    <y>300</y>
+                    <width>250</width>
+                    <height>71</height>
+                   </rect>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>351</width>
+                    <height>71</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="lb_hoten_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>880</x>
+                    <y>30</y>
+                    <width>250</width>
+                    <height>45</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QTableWidget" name="tb_ds_xin_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>40</x>
+                    <y>310</y>
+                    <width>521</width>
+                    <height>261</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTableWidget {
+                border: 1px solid gray;
+                border-radius: 5px;
+                gridline-color: gray;
+                background-color: white;
+            }
+            QTableWidget::item {
+                border-bottom: 1px solid gray;
+                padding: 5px;
+            }
+            QHeaderView::section {
+                background-color: lightgray;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+            QTableWidget QTableCornerButton::section {
+                background-color: lightgray;
+                border: 1px solid gray;
+            }
+            QTableWidget::item:selected {
+                background-color: blue;
+            }</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xn_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>940</x>
+                    <y>390</y>
+                    <width>111</width>
+                    <height>41</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+color: rgb(255, 255, 255);
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+
+                font-family: Arial, sans-serif;
+background-color: rgb(99, 0, 0);
+                font-size: 14px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Xác nhận</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="lb_chuc_vu_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>880</x>
+                    <y>130</y>
+                    <width>250</width>
+                    <height>45</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="lb_sdt_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>880</x>
+                    <y>200</y>
+                    <width>250</width>
+                    <height>45</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_39">
+                  <property name="geometry">
+                   <rect>
+                    <x>970</x>
+                    <y>260</y>
+                    <width>55</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>71</width>
+                    <height>41</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Ghi chú</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_42">
+                  <property name="geometry">
+                   <rect>
+                    <x>580</x>
+                    <y>90</y>
+                    <width>151</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Tahoma</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Nhập ID (nếu cần)</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="lb_ngay_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>580</x>
+                    <y>200</y>
+                    <width>250</width>
+                    <height>45</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial,sans-serif</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xoa_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>600</x>
+                    <y>310</y>
+                    <width>111</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Xóa dòng</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_xn_id_nc_nghi">
+                  <property name="geometry">
+                   <rect>
+                    <x>730</x>
+                    <y>90</y>
+                    <width>101</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Xác nhận UID</string>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_thongke">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                 <widget class="QTableWidget" name="tb_thong_ke_thang">
+                  <property name="geometry">
+                   <rect>
+                    <x>40</x>
+                    <y>40</y>
+                    <width>801</width>
+                    <height>521</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTableWidget {
+                border: 1px solid gray;
+                border-radius: 5px;
+                gridline-color: gray;
+                background-color: white;
+            }
+            QTableWidget::item {
+                border-bottom: 1px solid gray;
+                padding: 5px;
+            }
+            QHeaderView::section {
+                background-color: lightgray;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+            QTableWidget QTableCornerButton::section {
+                background-color: lightgray;
+                border: 1px solid gray;
+            }
+            QTableWidget::item:selected {
+                background-color: blue;
+            }</string>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="layoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>900</x>
+                    <y>40</y>
+                    <width>201</width>
+                    <height>235</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <item>
+                    <widget class="QLabel" name="label_20">
+                     <property name="text">
+                      <string>ID</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="combo_tk_id">
+                     <property name="styleSheet">
+                      <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_21">
+                     <property name="text">
+                      <string>Tháng</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="combo_thang_thongke">
+                     <property name="styleSheet">
+                      <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_24">
+                     <property name="text">
+                      <string>Năm</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="combo_nam_thongke">
+                     <property name="styleSheet">
+                      <string notr="true">QComboBox {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: white;
+            }
+            QComboBox::drop-down {
+                subcontrol-origin: padding;
+                subcontrol-position: top right;
+                width: 20px;
+                border-left-width: 1px;
+                border-left-color: gray;
+                border-left-style: solid;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            QComboBox::down-arrow {
+                image: url(down_arrow.png); /* Ensure you have this image in the same directory or provide the correct path */
+                width: 10px;
+                height: 10px;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid gray;
+                selection-background-color: lightgray;
+            }</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QPushButton" name="btn_loc_thongke">
+                  <property name="geometry">
+                   <rect>
+                    <x>950</x>
+                    <y>310</y>
+                    <width>101</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Lọc</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_save_thongke">
+                  <property name="geometry">
+                   <rect>
+                    <x>950</x>
+                    <y>380</y>
+                    <width>101</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 38);
+color: rgb(255, 255, 255);
+border-radius: 15px; </string>
+                  </property>
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Maximum</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>17</width>
+                <height>13</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
